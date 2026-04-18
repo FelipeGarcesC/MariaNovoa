@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Maria Novoa</title>
+    <link rel="icon" href="./media/logoLoto.png" type="image/x-icon">
+</head>
+
+
+<body>
+
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="./media/logoLoto.png" alt="lotoLogo"></a>
+                <h1>Maria Novoa</h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#hero">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#" class="btn-agendar-nav" id="openAgendar">Agendar</a></li>
+                    <li><a href="#" class="btn-login-nav" id="openLogin">Usuario</a></li>
+                    <li><a href="#" id="btnLogout" style="display:none;">Salir</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+
+
+        <section class="hero" id="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2>Dra. Maria Novoa</h2>
+                    <p class="p-esp">
+                        Master en Psicologia Clinica | Terapia Cognitiva-Conductual
+                    </p>
+                    <p class="p-txt">
+                        Encuentra tu equilibrio y bienestar.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#" class="btn-primary">Agendar Cita</a>
+                        <a href="#sobre-mi" class="btn-secondary">Conocer más</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-blob"></div>
+                    <img src="./media/imghero.png" alt="imagen prueba">
+                </div>
+            </div>
+        </section>
+
+
+        <section class="personal" id="sobre-mi">
+            <div class="per-content">
+                <div class="per-txt">
+                    <span class="subtitle">Conóceme</span>
+                    <h2>Mi compromiso es acompañarte en tu proceso</h2>
+                    <p>
+                        Soy psicóloga con una Maestría en Psicología Clínica y especialista en la Evaluación y Tratamiento de Trastornos Emocionales. Desde hace más de tres años, acompaño a personas en su consulta particular, integrando la práctica clínica basada en evidencia con un enfoque profundamente humano y empático.
+                        Mi objetivo es ofrecerte un espacio seguro y estructurado —certificado también en telepsicología— donde podamos explorar lo que sientes sin juicios, desarrollando herramientas prácticas para afrontar la ansiedad, la desregulación emocional y mejorar tu calidad de vida.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="servicios" id="servicios">
+            <span class="subtitle">Especialidades</span>
+            <h2>¿Cómo puedo ayudarte?</h2>
+            <div class="serv-content">
+                <!-- Servicio 1 -->
+                <div class="servicio">
+                    <div class="serv-icon">
+                        <img src="./media/mental-health.png" alt="Terapia Individual">
+                    </div>
+                    <div class="serv-txt">
+                        <h3>Ansiedad</h3>
+                        <p>Un espacio personal para explorar tus pensamientos y fortalecer tu salud emocional en un entorno seguro.</p>
+                    </div>
+                </div>
+                <!-- Servicio 2 -->
+                <div class="servicio">
+                    <div class="serv-icon">
+                        <img src="./media/depression.png" alt="Terapia de Pareja">
+                    </div>
+                    <div class="serv-txt">
+                        <h3>Depresion</h3>
+                        <p>Herramientas de comunicación y resolución de conflictos para reconstruir el vínculo y la confianza.</p>
+                    </div>
+                </div>
+                <!-- Servicio 3 -->
+                <div class="servicio">
+                    <div class="serv-icon">
+                        <img src="./media/inner-peace.png" alt="Terapia Online">
+                    </div>
+                    <div class="serv-txt">
+                        <h3>Terapia Online</h3>
+                        <p>Sesiones desde la comodidad de tu hogar, manteniendo la misma calidez y eficacia que la terapia presencial.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="reseñas" id="testimonios">
+            <div class="container-res">
+                <span class="subtitle">Testimonios</span>
+                <h2>Voces de quienes han confiado en mí</h2>
+                <!-- Contenedor principal de Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <!-- Reseña 1 -->
+                        <div class="swiper-slide card-res">
+                            <div class="quote-icon">“</div>
+                            <p class="res-text">"Encontrar a Maria fue un antes y un después. Su paciencia me dio la calma que necesitaba."</p>
+                            <div class="res-author">
+                                <span class="author-name">Ana M.</span>
+                                <span class="author-tag">Paciente</span>
+                            </div>
+                        </div>
+                        <!-- Reseña 2 -->
+                        <div class="swiper-slide card-res">
+                            <div class="quote-icon">“</div>
+                            <p class="res-text">"Excelente profesional. El espacio que brinda es seguro y sin juicios."</p>
+                            <div class="res-author">
+                                <span class="author-name">Carlos R.</span>
+                                <span class="author-tag">Paciente</span>
+                            </div>
+                        </div>
+                        <!-- Reseña 3 -->
+                        <div class="swiper-slide card-res">
+                            <div class="quote-icon">“</div>
+                            <p class="res-text">"Las herramientas prácticas me han ayudado a gestionar mi ansiedad de forma eficaz."</p>
+                            <div class="res-author">
+                                <span class="author-name">Laura G.</span>
+                                <span class="author-tag">Paciente</span>
+                            </div>
+                        </div>
+                        <!-- Reseña 4 -->
+                        <div class="swiper-slide card-res">
+                            <div class="quote-icon">“</div>
+                            <p class="res-text">"Las herramientas prácticas me han ayudado a gestionar mi ansiedad de forma eficaz."</p>
+                            <div class="res-author">
+                                <span class="author-name">Laura G.</span>
+                                <span class="author-tag">Paciente</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Botones de navegación y puntitos (opcional) -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="contacto" id="contacto">
+            <div class="container-contacto">
+                <div class="contacto-info">
+                    <span class="subtitle">Contacto</span>
+                    <h2>Comencemos a trabajar en tu bienestar</h2>
+                    <p>Si tienes alguna duda o deseas agendar una primera sesión informativa, no dudes en escribirme. Te responderé lo antes posible.</p>
+                    <div class="info-detalles">
+                        <div class="info-item">
+                            <span class="icon">📍</span>
+                            <div>
+                                <h4>Ubicación</h4>
+                                <p>Bogota, Colombia</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="icon">📧</span>
+                            <div>
+                                <h4>Email</h4>
+                                <p>mafenovoa_98@hotmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contacto-wrapper-form">
+                    <form class="form-contacto" id="contactForm" action="https://formspree.io/f/mojpgoke" method="POST">
+                        <div class="form-group">
+                            <label>Nombre completo</label>
+                            <input type="text" name="name" placeholder="Ej. Ana García" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Correo electrónico</label>
+                            <input type="email" name="email" placeholder="tu@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Celular</label>
+                            <input type="tel" name="phone" placeholder="Ej. 300 123 4567" required>
+                        </div>
+                        <div class="form-group">
+                            <label>¿En qué puedo ayudarte?</label>
+                            <textarea name="message" placeholder="Cuéntame brevemente el motivo de contacto..." required></textarea>
+                        </div>
+                        <button type="submit" id="submitBtn" class="btn-contacto">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2026 Maria Novoa - Psicóloga Clínica. Todos los derechos reservados.</p>
+            <div class="footer-links">
+                <a href="#">Aviso de Privacidad</a>
+                <a href="#">Términos y Condiciones</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <div id="authModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="authMessage" class="auth-message" style="display:none; padding:10px; margin-bottom:15px; border-radius:8px; text-align:center;"></div>
+            <div class="auth-container">
+                <div class="auth-tabs">
+                    <button class="tab-btn active" data-target="login">Iniciar Sesión</button>
+                    <button class="tab-btn" data-target="register">Crear Cuenta</button>
+                </div>
+            
+                <form id="loginForm" class="auth-form active">
+                    <h3>Bienvenido de nuevo</h3>
+                    <input type="email" placeholder="Correo electrónico" required>
+                    <input type="password" placeholder="Contraseña" required>
+                    <button type="submit" class="btn-modal">Ingresar para agendar</button>
+                </form>
+
+                <form id="registerForm" class="auth-form">
+                    <h3>Comienza tu proceso</h3>
+                    <input type="text" placeholder="Nombre completo" required>
+                    <input type="email" placeholder="Correo electrónico" required>
+                    <input type="password" placeholder="Crea una contraseña" required>
+                    <button type="submit" class="btn-modal">Registrarse y agendar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="calendarModal" class="modal">
+        <div class="modal-content" style="max-width: 900px; padding: 10px;">
+            <span class="close-modal" id="closeCalendar">&times;</span>
+            <div id="calendly-embed"></div>
+        </div>
+    </div>
+
+
+    <section id="patientDashboard" style="display: none; padding: 50px 20px;">
+        <div class="dashboard-container" style="max-width: 900px; margin: auto;">
+            <h2>¡Bienvenido(a), <span id="userNameDisplay">Paciente</span>!</h2>
+        
+            <div class="grid-dashboard" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 30px;">
+                <div class="card" style="padding: 20px; border-radius: 15px; border: 1px solid #ddd;">
+                    <h3>Próxima Cita</h3>
+                    <p id="nextAppointment">Cargando...</p>
+                </div>
+            
+                <div class="card" style="padding: 20px; border-radius: 15px; border: 1px solid #ddd;">
+                    <h3>Tareas Asignadas</h3>
+                    <ul id="activitiesList"></ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
