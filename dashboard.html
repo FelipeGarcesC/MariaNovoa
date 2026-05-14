@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Panel - Dra. Maria Novoa</title>
+    <link rel="stylesheet" href="css/estilos.css"> 
+</head>
+
+
+
+<body>
+
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="./media/logoLoto.png" alt="lotoLogo"></a>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#" class="btn-agendar-nav" id="openAgendar">Agendar</a></li>
+                    <li><a href="#" class="btn-login-nav" id="openLogin">Usuario</a></li>
+                    <li><a href="#" id="btnLogout" style="display:none;">Salir</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main class="dashboard-container">
+        <h1>Bienvenido(a), <span id="userNameDisplay">...</span></h1>
+        
+        <div class="grid-dashboard">
+            <section class="card">
+                <h3>Tu Próxima Cita</h3>
+                <div id="nextAppointmentContainer">
+                    <p id="nextAppointmentText">Cargando cita...</p>
+                </div>
+            </section>
+
+            <section class="card">
+                <h3>Tareas y Actividades</h3>
+                <ul id="activitiesList">
+                    </ul>
+            </section>
+        </div>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/dashboard.js"></script>
+
+</body>
+</html>

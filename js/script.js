@@ -106,11 +106,15 @@ function mostrarCalendario() {
 function actualizarInterfazUsuario() {
     if (currentUser) {
         const userBtn = document.getElementById("openLogin");
-        userBtn.innerText = currentUser.user_metadata.full_name;
-        btnLogout.style.display = "flex";
-        document.getElementById("patientDashboard").style.display = "block";
-        document.getElementById("userNameDisplay").innerText = currentUser.user_metadata.full_name || "Paciente";
+        if (userBtn){
+            userBtn.innerText = currentUser.user_metadata.full_name || "Mi Perfil";
+            userBtn.onclick = (e) => {
+                e.preventDefault();
+                window.location.href = "dashboard.html";
+            };
+        }
     }
+    if (btnLogout) btnLogout.style.display = "flex";
 }
 
 
@@ -192,7 +196,7 @@ contactForm.addEventListener('submit', async (e) => {
     btn.disabled = true;
 
     try {
-        const response = await fetch("https://formspree.io/f/tu_codigo_aqui", { // Reemplaza con tu URL
+        const response = await fetch("https://formspree.io/f/mojpgoke", {
             method: 'POST',
             body: new FormData(contactForm),
             headers: { 'Accept': 'application/json' }

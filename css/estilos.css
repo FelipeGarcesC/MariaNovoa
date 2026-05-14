@@ -39,25 +39,28 @@ p{
 
 /*HEADER*/
 header{
-  background-color: rgba(245, 239, 230, 0.8);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(122, 158, 126, 0.2); 
   height: 70px; 
   display: flex;
-  margin-top: 3px;
+  margin-top: 15px;
   padding: 3px;
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 .container{
-  width: 100%;
   display: flex;
   justify-content: space-between;
   text-align: center;
   align-items: center;
   margin: auto;
-  max-width: 1400px;
+  height: 7vh;
+  width: 100%;
+  max-width: 55%;
+  border: 1px solid rgba(122, 158, 126, 0.2);
+  border-radius: 40px;
+  padding: 5px 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 /*NAV*/
 nav ul{
@@ -67,35 +70,41 @@ nav ul{
   padding-bottom: 2px;
 }
 /*NAV-TEXTO*/
-.logo h1{
-  font-family: 'Playfair Display', serif;
-  font-size: 25px;
-  font-weight: 500;
-}
 nav a{
+  font-size: 17px;
   text-decoration: none;
   color: #3A3A3A;
   font-weight: 400;
   position: relative;
   transition: color 0.3s ease;
 }
+.nav-agendar a{
+  font-size: 17px;
+  text-decoration: none;
+  color: #3A3A3A;
+  font-weight: 400;
+  position: relative;
+  border: #7A9E7E 2px solid;
+  padding: 8px 20px;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  }
 /*NAV-LOGO*/
 .logo{
   display: flex;
   align-items: center;
-  gap: 2px;
 }
 .logo img{
-  width: 53px;
-  height: 40px;
-  padding-top: 6px;
+  width: 70px;
+  height: 50px;
+  padding-top: 3px;
 }
 /*NAV HOVER*/
 nav a::after{
   content: "";
   position: absolute;
   width: 0%;
-  height: 2px;
+  height: 3px;
   background-color: #7A9E7E;
   left: 0;
   bottom: -5px;
@@ -107,6 +116,10 @@ nav a.active::after{
 }
 nav a:hover{
   color: #7A9E7E;
+}
+.nav-agendar a:hover{
+  color: white;
+  background-color: #7A9E7E;
 }
 
 

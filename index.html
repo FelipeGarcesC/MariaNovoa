@@ -17,17 +17,18 @@
         <div class="container">
             <div class="logo">
                 <a href="index.html"><img src="./media/logoLoto.png" alt="lotoLogo"></a>
-                <h1>Maria Novoa</h1>
             </div>
             <nav class="nav">
                 <ul>
                     <li><a href="#hero">Inicio</a></li>
                     <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#" class="btn-agendar-nav" id="openAgendar">Agendar</a></li>
                     <li><a href="#" class="btn-login-nav" id="openLogin">Usuario</a></li>
                     <li><a href="#" id="btnLogout" style="display:none;">Salir</a></li>
                 </ul>
             </nav>
+            <div class="nav-agendar">
+                <a href="#" class="btn-agendar-nav" id="openAgendar">Agendar</a>
+            </div>
         </div>
     </header>
 
@@ -258,25 +259,6 @@
             <div id="calendly-embed"></div>
         </div>
     </div>
-
-
-    <section id="patientDashboard" style="display: none; padding: 50px 20px;">
-        <div class="dashboard-container" style="max-width: 900px; margin: auto;">
-            <h2>¡Bienvenido(a), <span id="userNameDisplay">Paciente</span>!</h2>
-        
-            <div class="grid-dashboard" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 30px;">
-                <div class="card" style="padding: 20px; border-radius: 15px; border: 1px solid #ddd;">
-                    <h3>Próxima Cita</h3>
-                    <p id="nextAppointment">Cargando...</p>
-                </div>
-            
-                <div class="card" style="padding: 20px; border-radius: 15px; border: 1px solid #ddd;">
-                    <h3>Tareas Asignadas</h3>
-                    <ul id="activitiesList"></ul>
-                </div>
-            </div>
-        </div>
-    </section>
 
 
     <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
